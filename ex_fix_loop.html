@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Loops</title>
+	<script >
+
+		document.write('<h2> Primeiro desafio </h2>')
+
+		var lista_frutas = Array()
+
+		lista_frutas[0] = 'Banana'
+		lista_frutas[1] = 'Maça'
+		lista_frutas[2] = 'Laranja'
+		lista_frutas[3] = 'Uva'
+
+
+		for(x= 0; x<lista_frutas.length; x++){
+			document.write(lista_frutas[x]+ '<br>')
+		}
+
+		document.write('<hr>')
+
+		document.write('<h2> Segundo desafio </h2>')
+
+	
+		var y = 1
+		while(y<=10){			
+			var x = 0
+			while(x<=10){
+				document.write(y + ' x ' + x + ' = ' + (y * x) + '<br>')
+				x++
+			}
+			document.write('<hr>')
+			y++	
+		}
+
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

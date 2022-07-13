@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Eventos </title>
+</head>
+<script>
+		function modificaCor(){
+			document.getElementById('teste').style.background = "yellow";
+		}
+
+		function verif(){
+			var x = document.getElementById('teste').value 
+
+			if(x.length < 3)
+			document.getElementById('teste').style.background = "blue";
+			else{
+			document.getElementById('teste').style.background = "red";		
+			}
+		}
+		</script>
+	
+<body>
+	<h3>Prática JS</h3>
+
+	<input onfocus="modificaCor()" onblur="verif()" type="text" name="teste" id="teste">
+
+</body>
+</html>

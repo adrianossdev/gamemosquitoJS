@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Array</title>
+	<script>
+		
+	var objetos = Array('cadeira','garfo','impressora')	
+
+	function adicionar(){
+		var x = document.getElementById('texto').value
+		if(x === ''){
+			alert('Informe um valor válido')
+		}else if(objetos.indexOf(x) !== -1){
+			alert('Objeto já foi adicionado')
+		}else{
+			objetos.push(x)
+			console.log(objetos)
+			document.getElementById('texto').value = ''
+		}
+	}
+
+	function ordenar(){
+		objetos.sort()
+		console.log(objetos)
+	}
+	</script>
+
+</head>
+<body>
+<h1> Aplicação</h1>
+
+<input type="text" name="texto" id="texto">
+<button onclick="adicionar()">Adicionar</button>
+<button	onclick="ordenar()">Ordenar</button>
+
+</body>
+</html>

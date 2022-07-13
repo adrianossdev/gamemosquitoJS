@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript prática</title>
+	<script>
+		var nome = prompt('Digite seu nome')
+		var altura = prompt('Digite sua altura em cm')
+		var peso = prompt('Digite seu peso em kg')
+
+		altura = parseFloat(altura)
+		peso = parseFloat(peso)
+
+		altura = altura/100
+
+		var imc = peso / (altura*altura)
+		var classificacao
+
+		if(imc<16){
+			//document.write()
+			classificacao = 'Baixo peso muito grave'
+		}else if(imc>=16 && imc<=16.99){
+			//document.write()
+			classificacao = 'Teste2'
+		}else if(imc>=17 && imc<=18.49){
+			//document.write()
+			classificacao = 'Teste3'
+		}else if(imc>=18.5 && imc<=24.99){
+			//document.write()
+			classificacao = 'Teste4'
+		}else if(imc>=25 && imc<=29.99){
+			//document.write()
+			classificacao = 'Sobrepeso'
+		}else if(imc>=30 && imc<=34.99){
+			//document.write()
+			classificacao = 'Teste5'
+		}else if(imc>=35 && imc<=39.99){
+			//document.write()
+			classificacao = 'Teste6'
+		}else if(imc>=40){
+			//document.write()
+			classificacao = 'Teste7'
+		}		
+
+
+	document.write(nome + 'possui indice de massa corporal igual a ' + imc + ', sendo classificado como:' + classificacao)
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

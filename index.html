@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inicio</title>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="game.css">
+
+	<script>
+		function iniciarJogo(){
+			var nivel = document.getElementById('nivel').value
+			if(nivel === ''){
+				alert('Selecione um nível de jogo')
+				return false
+			}
+			window.location.href = 'game_mosquito.html?' + nivel
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<img src="img/game.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<select class="form-control" id="nivel">
+								<option value=""> Selecione um nível</option>
+								<option value="normal"> Normal</option>
+								<option value="dificil"> Dificil</option>
+								<option value="muitodificil"> Muito dificil</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar </button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

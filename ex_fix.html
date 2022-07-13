@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript fixação</title>
+	<script >
+		var num1 = prompt('Informe um número')
+		var op = prompt('Informe a operação: soma ou subtração')
+		var num2 = prompt('Informe outro numero')
+		
+
+
+
+		function calcularOp(num1, op, num2){
+			num1 = parseFloat(num1)
+			num2 = parseFloat(num2)
+			var resultado = 0
+
+			if(op=='soma'){
+			resultado = num1 + num2
+
+			}else if(op=='subtração'){
+			resultado = num1 - num2
+			}
+			return resultado
+		}
+		document.write('O resultado é '+ calcularOp(num1,op,num2))
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>
